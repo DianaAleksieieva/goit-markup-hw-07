@@ -1,0 +1,112 @@
+.footer {
+  background-color: #2f303a;
+}
+.footer-container {
+  padding-top: 60px;
+  display: flex;
+}
+/* Контакты - номер, mail */
+.address {
+  color: var(--white-color);
+  font-size: 14px;
+  line-height: 1.71;
+  margin-top: 0;
+  margin-bottom: 9px;
+  font-style: normal;
+
+  &__list {
+    padding-bottom: 60px;
+  }
+  &__link {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+.footer-comunication {
+  display: flex;
+}
+.footer-caprion {
+  color: var(--white-color);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.join-us {
+  margin-left: 70px;
+
+  &__list {
+    display: flex;
+    color: var(--white-color);
+  }
+
+  &__items {
+    line-height: 0;
+  }
+  &__items:not(:last-child) {
+    margin-right: 10px;
+  }
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white-color);
+    width: 44px;
+    height: 44px;
+    background-color: var(--transparent);
+    border-radius: 22px;
+    @include transition(background-color);
+    @include transition(color);
+  }
+  &__link:focus,
+  &__link:hover {
+    background-color: var(--brand-color);
+  }
+  &__social-icon {
+    height: 20px;
+    width: 20px;
+    fill: currentColor;
+  }
+}
+.footer-form {
+  margin-left: 93px;
+}
+.signup-form {
+  display: flex;
+
+  &_email-input {
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: transparent;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    padding-left: 16px;
+  }
+}
+
+.icon-send {
+  height: 24px;
+  width: 24px;
+  margin-left: 10px;
+}
+
+.submit-button {
+  display: flex;
+  color: var(--white-color);
+  background-color: var(--brand-color);
+  padding: 10px 28px;
+  border-radius: 4px;
+  border: 0px;
+  margin-left: 12px;
+  align-items: center;
+}
+.submit-button:focus,
+.submit-button:hover {
+  cursor: pointer;
+}

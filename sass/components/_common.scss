@@ -1,0 +1,37 @@
+/* Стиль логотипа */
+
+.logo {
+  font-size: 26px;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--black-color);
+  margin-right: 93px;
+
+  &__text {
+    margin: 0;
+  }
+  &--accent {
+    color: var(--brand-color);
+    font-weight: 700;
+  }
+  &--inverse {
+    font-size: 26px;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--white-color);
+  }
+
+  .logo__footer {
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+}
+.button {
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  text-decoration: none;
+}
